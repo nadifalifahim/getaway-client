@@ -1,0 +1,116 @@
+.navbar {
+  padding: 20px 0;
+  box-shadow: 1px 1px 20px 1px var(--shadow-black);
+  background-color: white;
+  width: 100%;
+  position: sticky;
+  top: 0%;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+nav a {
+  margin: 0 25px;
+  padding-bottom: 4px;
+  transition: 0.3s all;
+  border-bottom: 2px solid transparent;
+}
+
+.navlink:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.nav-active {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.logo {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s all;
+}
+
+.logo:hover {
+  color: var(--color-primary);
+}
+
+.logo-icon img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo-span-get {
+  font-weight: 500;
+}
+
+.logo-span-away {
+  color: var(--color-gray);
+  font-weight: 300;
+}
+
+.logo:hover .logo-span-away {
+  color: var(--color-primary);
+}
+
+.btn-register {
+  color: white;
+  background-color: var(--color-primary);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+}
+
+.btn-register:hover {
+  color: var(--color-primary);
+  background-color: white;
+  border-color: var(--color-primary);
+}
+
+.logged-in-state {
+  display: flex;
+  align-items: center;
+}
+
+.logged-in-state * {
+  margin: 0 5px;
+}
+
+.logged-in-state img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.logged-in-state button {
+  color: var(--color-primary);
+  background-color: white;
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  padding: 8px 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  transition: 0.3s all ease;
+}
+
+.logged-in-state button:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.logged-in-state p {
+  margin-right: 20px;
+}

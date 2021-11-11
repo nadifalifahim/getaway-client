@@ -1,5 +1,6 @@
 :root {
-  --color-blue: #4024e1;
+  --color-primary: #f36201;
+  --color-primary-gradient: #ff893a;
   --color-black: #111111;
   --color-gray: #898989;
   --color-light-gray: #ebebeb;
@@ -8,6 +9,7 @@
   --shadow-black-light: #0000000e;
   --color-dark-blue: #223645;
   --color-light-blue: #ebf5f5;
+  --color-light-orange: #fff3e9;
 }
 
 * {
@@ -28,4 +30,38 @@ button,
 input,
 textarea {
   font-family: "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.primary-button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.section-heading {
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: var(--color-gray);
+  font-size: 1em;
+}
+
+.section-title {
+  font-size: 2.3em;
+  color: var(--color-dark-blue);
+}
+
+.section-content {
+  color: var(--color-gray);
+  font-size: 1.1em;
+  font-weight: 500;
 }

@@ -1,0 +1,40 @@
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+// import Service from "../../../Services/Service";
+import "./HomePackages.css";
+
+const HomePackages = () => {
+  const [serviceData, setServiceData] = useState([]);
+
+  useEffect(() => {
+    fetch("./data.json")
+      .then((res) => res.json())
+      .then((data) => setServiceData(data));
+  }, []);
+  return (
+    <div className="home-services-container">
+      <div className="home-services-content">
+        <small className="section-heading">Choose Your Package</small>
+        <h2 className="section-title">
+          Select Your Best Package For Your Travel
+        </h2>
+        <p className="section-content">
+          Need help deciding where to go next? Take a look at some of our
+          travelers’ recommended vacations.
+        </p>
+      </div>
+      {/* <div className="home-service-container">
+        {serviceData.slice(0, 6).map((service) => (
+          <Service key={service.id} service={service}></Service>
+        ))}
+      </div> */}
+      <div className="home-services-content">
+        <Link to="/services">
+          <button>Explore all services</button>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default HomePackages;

@@ -1,0 +1,26 @@
+.contact-container {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.contact-container p {
+  margin: 5px 0 20px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 10px;
+  background-color: var(--color-light-gray);
+  border: none;
+  margin: 10px 20px 20px 0;
+  font-size: 1em;
+}
+
+.contact-input-container-primary * {
+  width: 40%;
+}
+.contact-input-container-secondary input,
+.contact-input-container-secondary textarea {
+  width: 84%;
+}
