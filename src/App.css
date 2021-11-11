@@ -1,3 +1,31 @@
-.App {
-  text-align: center;
+:root {
+  --color-blue: #4024e1;
+  --color-black: #111111;
+  --color-gray: #898989;
+  --color-light-gray: #ebebeb;
+  --color-footer-text: #adb3b8;
+  --shadow-black: #00000009;
+  --shadow-black-light: #0000000e;
+  --color-dark-blue: #223645;
+  --color-light-blue: #ebf5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+button,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
 }
