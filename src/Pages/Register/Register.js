@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router";
 import useFirebase from "../../Hooks/useFirebase";
 import "./Register.css";
+import googleIcon from "../../Images/Login/google.png";
+import { Link } from "react-router-dom";
 
 // Register page
 
@@ -45,36 +47,57 @@ const Register = () => {
   };
 
   return (
-    <div className="register-container">
-      <div>
-        <h1 className="section-title">Register</h1>
-        <form onSubmit={handleRegistration}>
-          <input
-            onBlur={handleNameChange}
-            type="text"
-            required
-            placeholder="Enter your name"
-          ></input>
-          <input
-            onBlur={handleEmailChange}
-            type="email"
-            required
-            placeholder="Enter your email"
-          ></input>
-          <input
-            type="password"
-            required
-            placeholder="Enter your password"
-            onBlur={handlePasswordChange}
-          ></input>
-          <button type="submit" className="primary-button">
-            Register
+    <div className="register-body">
+      <div className="register-container">
+        <div>
+          <h1 className="section-title">REGISTER</h1>
+          <form onSubmit={handleRegistration}>
+            <label>
+              Full Name
+              <input
+                onBlur={handleNameChange}
+                type="text"
+                required
+                placeholder="Enter your name"
+              ></input>
+            </label>
+            <label>
+              Email Address
+              <input
+                onBlur={handleEmailChange}
+                type="email"
+                required
+                placeholder="abc@xyz.com"
+              ></input>
+            </label>
+            <label>
+              Password
+              <input
+                type="password"
+                required
+                placeholder="Enter your password"
+                onBlur={handlePasswordChange}
+              ></input>
+            </label>
+            <button type="submit" className="primary-button">
+              Register
+            </button>
+          </form>
+          <p>
+            Already signed up?{" "}
+            <Link className="create-an-account-text" to="/login">
+              Go to login
+            </Link>
+          </p>
+        </div>
+        <div className="google-login">
+          <p>OTHER SIGN UP METHODS</p>
+          <button onClick={handleGoogleSignIn} className="primary-button">
+            {/* Sign In Using Google */}
+            <img src={googleIcon} alt="google"></img>
           </button>
-        </form>
+        </div>
       </div>
-      <button onClick={handleGoogleSignIn} className="primary-button">
-        Register Using Google
-      </button>
     </div>
   );
 };

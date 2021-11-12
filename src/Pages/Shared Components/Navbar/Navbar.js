@@ -67,7 +67,7 @@ const Navbar = () => {
             </div>
           ) : (
             <div>
-              <Link to="#home" smooth exact className={"navlink"}>
+              <Link to="/#home" smooth exact className={"navlink"}>
                 Home
               </Link>
               <Link to="/#about" smooth exact className={"navlink"}>
