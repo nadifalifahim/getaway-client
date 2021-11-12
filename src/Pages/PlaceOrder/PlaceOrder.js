@@ -10,15 +10,22 @@ const PlaceOrder = () => {
         <div>
           <h1 className="section-title">Billing Details</h1>
           <form>
-            <label>Full Name</label>
-            <input type="text" required value={user.displayName}></input>
-            <label>Email Address</label>
-            <input type="email" required value={user.email}></input>
-            <input
-              type="password"
-              required
-              placeholder="Enter your password"
-            ></input>
+            <label>
+              Full Name
+              <input type="text" required value={user.displayName}></input>
+            </label>
+            <label>
+              Email Address
+              <input type="email" required value={user.email}></input>
+            </label>
+            <label>
+              Shipping Address
+              <input type="text" required></input>
+            </label>
+            <label>
+              Phone Number
+              <input type="number" required></input>
+            </label>
             <button type="submit" className="primary-button">
               Place Order
             </button>

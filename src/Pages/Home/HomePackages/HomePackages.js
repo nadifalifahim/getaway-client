@@ -8,7 +8,7 @@ const HomePackages = () => {
   const [serviceData, setServiceData] = useState([]);
 
   useEffect(() => {
-    fetch("./data.json")
+    fetch("http://localhost:5000/services")
       .then((res) => res.json())
       .then((data) => setServiceData(data));
   }, []);
@@ -27,7 +27,7 @@ const HomePackages = () => {
       </div>
       <div className="home-service-container">
         {serviceData.slice(0, 6).map((service) => (
-          <Package key={service.id} service={service}></Package>
+          <Package key={service._id} service={service}></Package>
         ))}
       </div>
       <div className="home-services-content">
