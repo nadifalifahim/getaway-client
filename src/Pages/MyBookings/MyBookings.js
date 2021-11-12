@@ -9,7 +9,7 @@ const MyBookings = () => {
   const admin = false;
 
   useEffect(() => {
-    fetch("http://localhost:5000/my-orders")
+    fetch("https://hidden-basin-94639.herokuapp.com/my-orders")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

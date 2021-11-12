@@ -19,7 +19,7 @@ const AddNewService = () => {
       servicePrice,
       serviceDescription,
     };
-    fetch("http://localhost:5000/add-new-service", {
+    fetch("https://hidden-basin-94639.herokuapp.com/add-new-service", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

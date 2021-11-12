@@ -31,7 +31,7 @@ const PlaceOrder = () => {
       address,
     };
 
-    fetch("http://localhost:5000/new-order", {
+    fetch("https://hidden-basin-94639.herokuapp.com/new-order", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -51,7 +51,7 @@ const PlaceOrder = () => {
   };
 
   useEffect(() => {
-    fetch(`http://localhost:5000/place-order/${id}`)
+    fetch(`https://hidden-basin-94639.herokuapp.com/place-order/${id}`)
       .then((res) => res.json())
       .then((data) => setServiceInfo(data));
   }, [id]);

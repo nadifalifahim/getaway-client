@@ -11,7 +11,7 @@ const ServiceDetails = () => {
   const [currentService, setCurrentService] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${id}`)
+    fetch(`https://hidden-basin-94639.herokuapp.com/services/${id}`)
       .then((res) => res.json())
       .then((data) => setCurrentService(data));
   }, [id]);

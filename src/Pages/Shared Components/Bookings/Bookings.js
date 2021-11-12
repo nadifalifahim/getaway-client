@@ -10,7 +10,9 @@ const Bookings = (props) => {
   );
 
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${bookingDetails.serviceId}`)
+    fetch(
+      `https://hidden-basin-94639.herokuapp.com/services/${bookingDetails.serviceId}`
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -23,12 +25,15 @@ const Bookings = (props) => {
       "Are you sure you want to delete your booking?"
     );
     if (confirmDelete) {
-      fetch(`http://localhost:5000/orders/${bookingDetails._id}`, {
-        method: "DELETE",
-        headers: {
-          "content-type": "application/json",
-        },
-      })
+      fetch(
+        `https://hidden-basin-94639.herokuapp.com/orders/${bookingDetails._id}`,
+        {
+          method: "DELETE",
+          headers: {
+            "content-type": "application/json",
+          },
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
@@ -41,12 +46,15 @@ const Bookings = (props) => {
   };
 
   const handleStatusUpdate = () => {
-    fetch(`http://localhost:5000/orders/${bookingDetails._id}`, {
-      method: "PATCH",
-      headers: {
-        "content-type": "application/json",
-      },
-    })
+    fetch(
+      `https://hidden-basin-94639.herokuapp.com/orders/${bookingDetails._id}`,
+      {
+        method: "PATCH",
+        headers: {
+          "content-type": "application/json",
+        },
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

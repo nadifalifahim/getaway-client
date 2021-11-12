@@ -9,7 +9,7 @@ const HomePackages = () => {
   const [runLoader, setRunLoader] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/services")
+    fetch("https://hidden-basin-94639.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => {
         setServiceData(data);
