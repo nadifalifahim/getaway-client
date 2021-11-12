@@ -12,10 +12,12 @@ import MyBookings from "./Pages/MyBookings/MyBookings";
 import AddNewService from "./Pages/AddNewService/AddNewService";
 import ManageAllBookings from "./Pages/ManageAllBookings/ManageAllBookings";
 import PlaceOrder from "./Pages/PlaceOrder/PlaceOrder";
+import ServiceDetails from "./Pages/ServiceDetails/ServiceDetails";
 
 function App() {
   return (
     <div className="App">
+      {/* Routing Set Up */}
       <AuthProvider>
         <Router>
           <Navbar />
@@ -60,6 +62,7 @@ function App() {
                 </PrivateRoute>
               }
             />
+            <Route exact path="/services/:id" element={<ServiceDetails />} />
 
             <Route path="*" element={<PageNotFound />} />
           </Routes>

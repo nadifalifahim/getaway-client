@@ -33,7 +33,7 @@ const Login = () => {
   };
   const handleEmailSignIn = (e) => {
     signInUsingEmail(email, password);
-    history.push(locationURL);
+    history(locationURL);
     e.preventDefault();
   };
 

@@ -33,7 +33,7 @@ const Register = () => {
   };
   const handleRegistration = (e) => {
     registerUsingEmailandPassword(name, email, password);
-    history.push(locationURL);
+    history(locationURL);
     e.preventDefault();
   };
 

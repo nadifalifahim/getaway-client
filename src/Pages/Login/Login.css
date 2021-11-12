@@ -1,6 +1,6 @@
 .login-body {
   background-color: var(--color-light-gray);
-  height: 81vh;
+  min-height: 81vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,9 +17,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 40px;
   border-radius: 10px;
-  width: 20%;
+  width: 23%;
   background-color: white;
   box-shadow: 0px 10px 15px 5px var(--shadow-black-light);
 }

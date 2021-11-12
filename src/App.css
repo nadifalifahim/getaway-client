@@ -12,9 +12,18 @@
   --color-light-orange: #fff3e9;
 }
 
+.loader {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -39,6 +48,18 @@ button {
 .primary-button {
   background-color: var(--color-primary);
   color: white;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.secondary-button {
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-blue);
   border: none;
   padding: 10px 30px;
   font-weight: 500;

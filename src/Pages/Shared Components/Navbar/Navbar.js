@@ -30,7 +30,6 @@ const Navbar = () => {
             <div>
               <NavLink
                 to="/home"
-                exact
                 className={({ isActive }) =>
                   "navlink" + (isActive ? "-active" : "")
                 }
@@ -39,7 +38,6 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/my-bookings"
-                exact
                 className={({ isActive }) =>
                   "navlink" + (isActive ? "-active" : "")
                 }
@@ -48,7 +46,6 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/all-bookings"
-                exact
                 className={({ isActive }) =>
                   "navlink" + (isActive ? "-active" : "")
                 }
@@ -57,7 +54,6 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/add-new-service"
-                exact
                 className={({ isActive }) =>
                   "navlink" + (isActive ? "-active" : "")
                 }
@@ -67,13 +63,13 @@ const Navbar = () => {
             </div>
           ) : (
             <div>
-              <Link to="/#home" smooth exact className={"navlink"}>
+              <Link to="/#home" smooth className={"navlink"}>
                 Home
               </Link>
-              <Link to="/#about" smooth exact className={"navlink"}>
+              <Link to="/#about" smooth className={"navlink"}>
                 About Us
               </Link>
-              <Link to="/#packages" smooth exact className={"navlink"}>
+              <Link to="/#packages" smooth className={"navlink"}>
                 Packages
               </Link>
               <Link to="/#contact" smooth className={"navlink"}>

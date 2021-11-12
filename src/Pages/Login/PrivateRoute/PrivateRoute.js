@@ -1,16 +1,25 @@
 import React from "react";
-import { Navigate, Outlet } from "react-router";
+import { Navigate, useLocation } from "react-router";
 import useAuth from "../../../Hooks/useAuth";
-import PlaceOrder from "../../PlaceOrder/PlaceOrder";
+import Loader from "react-loader-spinner";
 
-const PrivateRoute = ({ children, redirectTo }) => {
+const PrivateRoute = ({ children }) => {
   // Private Route Set up
+  const location = useLocation();
 
   const { user, isLoading } = useAuth();
   if (isLoading) {
-    return <p>Loading..</p>;
+    return (
+      <div className="loader">
+        <Loader type="Grid" color="#f36201" height={80} width={80} />
+      </div>
+    );
   }
-  return user.email ? children : <Navigate to={"/login"} />;
+  return user.email ? (
+    children
+  ) : (
+    <Navigate to={{ pathname: "/login", state: { from: location } }} />
+  );
 };
 
 export default PrivateRoute;

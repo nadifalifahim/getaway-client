@@ -1,6 +1,5 @@
 import React from "react";
 import "./Package.css";
-import { sentenceCase } from "sentence-case";
 import { Link } from "react-router-dom";
 
 const Package = (props) => {
