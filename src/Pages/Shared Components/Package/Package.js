@@ -13,10 +13,12 @@ const Package = (props) => {
       <h2>{sentenceCase(title)}</h2>
       <p>{description.slice(0, 150)} . . .</p>
       <Link to={`/services/${id}`}>
-        <button>
-          More details on {title.toLowerCase()}{" "}
-          <i className="fas fa-chevron-right"></i>
+        <button className="package-button-book">
+          Book Now <i className="fas fa-chevron-right"></i>
         </button>
+      </Link>
+      <Link to={`/services/${id}`}>
+        <button className="package-button-details">More details </button>
       </Link>
     </div>
   );

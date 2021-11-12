@@ -1,0 +1,25 @@
+.place-order-container {
+  text-align: center;
+  height: 60vh;
+  width: 40%;
+  margin: 100px auto;
+}
+
+.place-order-container form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.place-order-container h1 {
+  margin-bottom: 10px;
+}
+
+.place-order-container input {
+  border: none;
+  outline: none;
+  background-color: var(--color-light-gray);
+  padding: 10px;
+  margin: 10px 0;
+  width: 97%;
+}

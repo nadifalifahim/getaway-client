@@ -11,6 +11,7 @@ import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import MyBookings from "./Pages/MyBookings/MyBookings";
 import AddNewService from "./Pages/AddNewService/AddNewService";
 import ManageAllBookings from "./Pages/ManageAllBookings/ManageAllBookings";
+import PlaceOrder from "./Pages/PlaceOrder/PlaceOrder";
 
 function App() {
   return (
@@ -26,18 +27,40 @@ function App() {
             <Route
               exact
               path="/my-bookings"
-              element={<PrivateRoute element={<MyBookings />} />}
+              element={
+                <PrivateRoute>
+                  <MyBookings />
+                </PrivateRoute>
+              }
             />
             <Route
               exact
               path="/all-bookings"
-              element={<PrivateRoute element={<ManageAllBookings />} />}
+              element={
+                <PrivateRoute>
+                  <ManageAllBookings />
+                </PrivateRoute>
+              }
             />
             <Route
               exact
               path="/add-new-service"
-              element={<PrivateRoute element={<AddNewService />} />}
+              element={
+                <PrivateRoute>
+                  <AddNewService />
+                </PrivateRoute>
+              }
             />
+            <Route
+              exact
+              path="/place-order"
+              element={
+                <PrivateRoute>
+                  <PlaceOrder />
+                </PrivateRoute>
+              }
+            />
+
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />
