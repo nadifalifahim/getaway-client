@@ -53,7 +53,7 @@ function App() {
             />
             <Route
               exact
-              path="/place-order"
+              path="/place-order/:id"
               element={
                 <PrivateRoute>
                   <PlaceOrder />

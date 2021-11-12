@@ -12,7 +12,7 @@ const Package = (props) => {
       </div>
       <h2>{serviceName.toUpperCase()}</h2>
       <p>{serviceDescription.slice(0, 150)} . . .</p>
-      <Link to={`/services/${_id}`}>
+      <Link to={`/place-order/${_id}`}>
         <button className="package-button-book">
           Book Now <i className="fas fa-chevron-right"></i>
         </button>
