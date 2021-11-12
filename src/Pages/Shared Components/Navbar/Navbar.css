@@ -123,3 +123,9 @@ nav a {
 .logged-in-state p {
   margin-right: 20px;
 }
+
+.nav-center,
+.nav-center div {
+  display: flex;
+  align-items: center;
+}

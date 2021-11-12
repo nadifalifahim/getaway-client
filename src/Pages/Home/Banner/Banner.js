@@ -1,11 +1,11 @@
 import React from "react";
 import "./Banner.css";
 import img1 from "../../../Images/Banner/2.jpg";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Banner = () => {
   return (
-    <div>
+    <div id="home">
       <div className="banner-container">
         <img src={img1} alt="banner" />
         <div className="banner-content">
@@ -15,11 +15,11 @@ const Banner = () => {
           <div className="underline-red"></div>
           <h2>Travelling Now Made Easier Than Ever Before</h2>
           <br />
-          <Link to="/services">
+          <HashLink smooth to="#packages">
             <button>
               Book Now <i className="fas fa-plus-circle"></i>
             </button>
-          </Link>
+          </HashLink>
         </div>
       </div>
       <div className="benefits-container">

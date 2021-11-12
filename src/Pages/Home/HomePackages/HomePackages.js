@@ -14,7 +14,7 @@ const HomePackages = () => {
   }, []);
 
   return (
-    <div className="home-services-container">
+    <div id="packages" className="home-services-container">
       <div className="home-services-content">
         <small className="section-heading">Choose Your Package</small>
         <h2 className="section-title">

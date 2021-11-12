@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Navbar.css";
 import useAuth from "../../../Hooks/useAuth";
 
@@ -24,26 +25,62 @@ const Navbar = () => {
             <span className="logo-span-away">away</span>
           </h1>
         </NavLink>
-        <div>
-          <NavLink
-            to="/home"
-            exact
-            className={({ isActive }) =>
-              "navlink" + (isActive ? "-active" : "")
-            }
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            exact
-            className={({ isActive }) =>
-              "navlink" + (isActive ? "-active" : "")
-            }
-          >
-            About Us
-          </NavLink>
+        <div className="nav-center">
+          {user?.email ? (
+            <div>
+              <NavLink
+                to="/home"
+                exact
+                className={({ isActive }) =>
+                  "navlink" + (isActive ? "-active" : "")
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/my-bookings"
+                exact
+                className={({ isActive }) =>
+                  "navlink" + (isActive ? "-active" : "")
+                }
+              >
+                My Bookings
+              </NavLink>
+              <NavLink
+                to="/all-bookings"
+                exact
+                className={({ isActive }) =>
+                  "navlink" + (isActive ? "-active" : "")
+                }
+              >
+                Manage All Bookings
+              </NavLink>
+              <NavLink
+                to="/add-new-service"
+                exact
+                className={({ isActive }) =>
+                  "navlink" + (isActive ? "-active" : "")
+                }
+              >
+                Add a New Service
+              </NavLink>
+            </div>
+          ) : (
+            <div>
+              <Link to="#home" smooth exact className={"navlink"}>
+                Home
+              </Link>
+              <Link to="/#about" smooth exact className={"navlink"}>
+                About Us
+              </Link>
+              <Link to="/#packages" smooth exact className={"navlink"}>
+                Packages
+              </Link>
+              <Link to="/#contact" smooth className={"navlink"}>
+                Contact Us
+              </Link>
+            </div>
+          )}
         </div>
         <div>
           {user?.email ? (
