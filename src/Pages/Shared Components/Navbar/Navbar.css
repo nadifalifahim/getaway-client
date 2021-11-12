@@ -30,7 +30,7 @@ nav a {
   border-color: var(--color-primary);
 }
 
-.nav-active {
+.navlink-active {
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
@@ -77,6 +77,15 @@ nav a {
   color: var(--color-primary);
   background-color: white;
   border-color: var(--color-primary);
+}
+
+.btn-register-active {
+  color: var(--color-primary);
+  background-color: white;
+  border-color: var(--color-primary);
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  padding: 10px 20px;
 }
 
 .logged-in-state {

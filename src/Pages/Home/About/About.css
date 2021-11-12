@@ -1,0 +1,23 @@
+.about-container {
+  width: 75%;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+}
+
+.about-image-container {
+  min-width: 500px;
+  max-height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.about-image-container img {
+  height: 100%;
+}
+
+.about-content {
+  margin: 0 100px;
+}

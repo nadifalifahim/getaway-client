@@ -26,12 +26,8 @@
 
 .banner-container button {
   color: white;
-  background: linear-gradient(
-    20deg,
-    var(--color-primary),
-    var(--color-primary-gradient)
-  );
-  border: 1px solid transparent;
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
   outline: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -39,12 +35,16 @@
   font-weight: 500;
   margin-top: 30px;
   cursor: pointer;
+  transition: 0.3s all;
+}
+.banner-container button:hover {
+  background-color: var(--color-primary);
+  padding-left: 25px;
 }
 
 .banner-content {
   width: 80%;
   display: flex;
-  justify-content: start;
   flex-direction: column;
   margin: auto;
 }

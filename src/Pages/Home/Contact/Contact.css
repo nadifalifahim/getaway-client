@@ -1,11 +1,15 @@
 .contact-container {
   width: 50%;
-  margin: 50px auto;
+  margin: 100px auto;
   text-align: center;
 }
 
+.section-title {
+  font-size: 3em;
+}
+
 .contact-container p {
-  margin: 5px 0 20px;
+  margin: 10px 0 30px;
 }
 
 .contact-container input,

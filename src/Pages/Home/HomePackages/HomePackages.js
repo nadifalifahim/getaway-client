@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Package from "../../Shared Components/Package/Package";
 // import Service from "../../../Services/Service";
 import "./HomePackages.css";
 
@@ -11,6 +12,7 @@ const HomePackages = () => {
       .then((res) => res.json())
       .then((data) => setServiceData(data));
   }, []);
+
   return (
     <div className="home-services-container">
       <div className="home-services-content">
@@ -23,11 +25,11 @@ const HomePackages = () => {
           travelers’ recommended vacations.
         </p>
       </div>
-      {/* <div className="home-service-container">
+      <div className="home-service-container">
         {serviceData.slice(0, 6).map((service) => (
-          <Service key={service.id} service={service}></Service>
+          <Package key={service.id} service={service}></Package>
         ))}
-      </div> */}
+      </div>
       <div className="home-services-content">
         <Link to="/services">
           <button>Explore all services</button>

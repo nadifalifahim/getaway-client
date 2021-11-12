@@ -17,7 +17,7 @@ const Banner = () => {
           <br />
           <Link to="/services">
             <button>
-              Book Now <i class="fas fa-plus-circle"></i>
+              Book Now <i className="fas fa-plus-circle"></i>
             </button>
           </Link>
         </div>

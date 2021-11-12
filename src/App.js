@@ -6,10 +6,12 @@ import PageNotFound from "./Pages/PageNotFound/PageNotFound";
 import Register from "./Pages/Register/Register";
 import Footer from "./Pages/Shared Components/Footer/Footer";
 import Navbar from "./Pages/Shared Components/Navbar/Navbar";
+import AuthProvider from "./Context/AuthProvider";
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
         <Navbar />
         <Routes>
@@ -21,6 +23,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
+      </AuthProvider>
     </div>
   );
 }

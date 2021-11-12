@@ -1,0 +1,28 @@
+.create-an-account-text {
+  color: var(--color-red);
+  text-decoration: underline;
+}
+
+.login-container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 81vh;
+}
+
+.login-container input {
+  display: block;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 2px solid var(--color-gray);
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  outline: none;
+  margin: 10px 0;
+  transition: 0.3s all ease;
+}
+
+.login-container input:focus {
+  border-color: var(--color-red);
+}
