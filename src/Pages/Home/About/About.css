@@ -42,4 +42,14 @@
     flex-direction: column;
     margin-bottom: 30px;
   }
+
+  .about-content {
+    margin: 0 0px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-content p {
+    text-align: justify;
+  }
 }

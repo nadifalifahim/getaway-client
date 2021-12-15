@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div id="contact" className="contact-container">
       <div>
-        <h1 className="section-title">Get in touch</h1>
+        <h1 className="section-title-contact">Get in touch</h1>
         <p className="section-content">
           Have a question or just want to say hi? We'd love to hear from you.
         </p>

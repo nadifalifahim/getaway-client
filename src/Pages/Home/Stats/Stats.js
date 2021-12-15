@@ -6,7 +6,9 @@ const Stats = () => {
   return (
     <div className="statistics-section">
       <div className="statistics-container">
-        <img src={img1} alt="background" />
+        <div className="statistics-image-container">
+          <img src={img1} alt="background" />
+        </div>
         <div className="statistics-content">
           <h2>
             10<span className="statistics-small">+</span>

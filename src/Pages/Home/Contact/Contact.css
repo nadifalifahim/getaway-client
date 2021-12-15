@@ -4,8 +4,9 @@
   text-align: center;
 }
 
-.section-title {
+.section-title-contact {
   font-size: 3em;
+  color: var(--color-dark-blue);
 }
 
 .contact-container p {
@@ -19,6 +20,12 @@
   border: none;
   margin: 10px 20px 20px 0;
   font-size: 1em;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-container textarea {
+  height: 200px;
 }
 
 .contact-input-container-primary * {
@@ -27,4 +34,30 @@
 .contact-input-container-secondary input,
 .contact-input-container-secondary textarea {
   width: 84%;
+}
+
+@media screen and (max-width: 450px) {
+  .contact-container {
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+  }
+
+  .section-title-contact {
+    font-size: 2em;
+  }
+
+  .contact-input-container-primary * {
+    width: 90%;
+  }
+
+  .contact-input-container-secondary input,
+  .contact-input-container-secondary textarea {
+    width: 90%;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    font-size: 0.9em;
+  }
 }

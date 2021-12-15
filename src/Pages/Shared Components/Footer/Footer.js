@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer-container">
       <div className="footer">
         <p>© 2021 Getaway Travel Agency</p>
-        <p>Designed by Nadif Ali Fahim</p>
+        <p>Developed by Nadif Ali Fahim</p>
         <div className="footer-icons">
           <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
             <i className="fab fa-facebook"></i>
