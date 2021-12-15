@@ -7,7 +7,9 @@ const Banner = () => {
   return (
     <div id="home">
       <div className="banner-container">
-        <img src={img1} alt="banner" />
+        <div className="banner-image-container">
+          <img src={img1} alt="banner" />
+        </div>
         <div className="banner-content">
           <h1>
             Find The Best Deals <br /> For Your Next Getaway

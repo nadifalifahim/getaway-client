@@ -86,3 +86,10 @@ button {
   font-size: 1.1em;
   font-weight: 500;
 }
+
+/* @media screen and (max-width: 450px) {
+  .section-title {
+    font-size: 1em;
+    color: var(--color-dark-blue);
+  }
+} */
