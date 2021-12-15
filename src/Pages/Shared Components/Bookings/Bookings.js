@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Bookings.css";
-import MyBookings from "../../MyBookings/MyBookings";
+// import MyBookings from "../../MyBookings/MyBookings";
 
 const Bookings = (props) => {
   const { bookingDetails, admin } = props;

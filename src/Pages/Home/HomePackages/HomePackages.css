@@ -33,7 +33,7 @@
   font-size: 1em;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
   .home-service-container {
     max-width: 90%;
     display: grid;

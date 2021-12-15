@@ -36,7 +36,7 @@
   width: 84%;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
   .contact-container {
     width: 90%;
     margin: 100px auto;

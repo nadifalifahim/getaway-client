@@ -97,7 +97,7 @@
   margin-top: 10px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 800px) {
   .banner-container {
     height: 90vh;
   }
