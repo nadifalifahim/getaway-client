@@ -1,6 +1,6 @@
 .login-body {
   background-color: var(--color-light-gray);
-  min-height: 81vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,4 +80,21 @@
 
 .google-login img {
   max-width: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .login-body {
+    background-color: var(--color-light-gray);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-light-gray);
+  }
+  .login-container {
+    margin: 0px auto;
+    padding: 40px;
+    border-radius: 0px;
+    width: 100%;
+  }
 }

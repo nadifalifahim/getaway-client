@@ -50,3 +50,26 @@
   font-size: 1rem;
   margin-left: 20px;
 }
+
+@media screen and (max-width: 800px) {
+  .bookings-items-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 5px var(--shadow-black);
+    padding: 20px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: 0.22s ease-out all;
+    font-weight: 700;
+    font-size: 1.2rem;
+    flex-direction: column;
+  }
+
+  .bookings-button-container {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin: 10px 0 0;
+  }
+}

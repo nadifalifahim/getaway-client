@@ -41,7 +41,7 @@ const Login = () => {
     <div className="login-body">
       <div className="login-container">
         <div>
-          <h1>LOGIN</h1>
+          <h1 className="section-title">LOGIN</h1>
           <form onSubmit={handleEmailSignIn}>
             <label>
               Username or Email Address

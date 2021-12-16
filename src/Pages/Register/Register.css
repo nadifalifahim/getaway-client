@@ -1,6 +1,6 @@
 .register-body {
   background-color: var(--color-light-gray);
-  height: 85vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,4 +47,17 @@
 .register-container button {
   width: 100%;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .register-body {
+    background: var(--color-light-gray);
+  }
+
+  .register-container {
+    margin: 0px auto;
+    padding: 40px;
+    border-radius: 0px;
+    width: 100%;
+  }
 }

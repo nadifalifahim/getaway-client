@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-import { useState } from "react/cjs/react.development";
 import useAuth from "../../../Hooks/useAuth";
 import "./NavbarMobile.css";
 
@@ -15,13 +14,13 @@ const NavbarMobile = () => {
     }, 20);
   };
 
-  const setUserFirstName = () => {
-    if (user.displayName) {
-      const userName = user?.displayName;
-      const userNameArray = userName.split(" ");
-      return userNameArray[0];
-    }
-  };
+  // const setUserFirstName = () => {
+  //   if (user.displayName) {
+  //     const userName = user?.displayName;
+  //     const userNameArray = userName.split(" ");
+  //     return userNameArray[0];
+  //   }
+  // };
   return (
     <nav className="navbar-mobile-container">
       <NavLink to="/home">
@@ -47,6 +46,7 @@ const NavbarMobile = () => {
             <div className="navbar-menu-container">
               <NavLink
                 to="/home"
+                onClick={handleMenuShow}
                 className={({ isActive }) =>
                   "navlink-mobile" + (isActive ? "-active" : "")
                 }
@@ -54,6 +54,7 @@ const NavbarMobile = () => {
                 Home
               </NavLink>
               <NavLink
+                onClick={handleMenuShow}
                 to="/my-bookings"
                 className={({ isActive }) =>
                   "navlink-mobile" + (isActive ? "-active" : "")
@@ -63,6 +64,7 @@ const NavbarMobile = () => {
               </NavLink>
               <NavLink
                 to="/all-bookings"
+                onClick={handleMenuShow}
                 className={({ isActive }) =>
                   "navlink-mobile" + (isActive ? "-active" : "")
                 }
@@ -71,6 +73,7 @@ const NavbarMobile = () => {
               </NavLink>
               <NavLink
                 to="/add-new-service"
+                onClick={handleMenuShow}
                 className={({ isActive }) =>
                   "navlink-mobile" + (isActive ? "-active" : "")
                 }
@@ -79,7 +82,10 @@ const NavbarMobile = () => {
               </NavLink>
               <button
                 className="navlink-mobile btn-register-mobile"
-                onClick={logOut}
+                onClick={() => {
+                  handleMenuShow();
+                  logOut();
+                }}
               >
                 <i className="fas fa-sign-out-alt"></i>
                 <span>Sign Out</span>

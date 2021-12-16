@@ -66,3 +66,28 @@
 .billing-details-content {
   width: 50%;
 }
+
+@media screen and (max-width: 800px) {
+  .place-order-container {
+    text-align: center;
+    min-height: 60vh;
+    width: 90%;
+    margin: 100px auto;
+  }
+
+  .order-details-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .place-order-container form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .billing-details-content {
+    width: 90%;
+  }
+}

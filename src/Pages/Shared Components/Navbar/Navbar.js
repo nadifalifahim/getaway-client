@@ -7,7 +7,7 @@ const Navbar = () => {
   const [mobileView, setMobileView] = useState(false);
 
   useEffect(() => {
-    console.log(window.outerWidth);
+    // console.log(window.outerWidth);
     if (window.outerWidth < 800) {
       setMobileView(true);
     } else {

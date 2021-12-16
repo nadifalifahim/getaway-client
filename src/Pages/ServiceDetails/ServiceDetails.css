@@ -34,6 +34,28 @@
   width: 100%;
 }
 
-.billing-details {
-  
+@media screen and (max-width: 800px) {
+  .service-details-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 50px auto;
+    min-height: 70vh;
+    flex-direction: column;
+  }
+
+  .service-details-image-container img {
+    border-radius: 20px;
+    max-width: 100%;
+  }
+
+  .service-details-content {
+    margin: 30px 0px 0;
+    text-align: center;
+  }
+
+  .service-details-image-container button {
+    width: 100%;
+  }
 }
